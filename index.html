@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0c0d09">
+<meta property="og:title" content="Golden Strada Trailers · Junk Removal in the Antelope Valley">
+<meta property="og:description" content="Eight AM, photo. Ten AM, gone. Junk, yard waste, concrete, dirt and rock hauled from Lancaster to Newhall.">
+<meta property="og:image" content="/img/og.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/logo-gst.webp">
+<title>Golden Strada Trailers · Junk Removal Lancaster &amp; Palmdale</title>
+<meta name="description" content="Junk removal, cleanouts and heavy hauling across the Antelope Valley. Lancaster, Palmdale, Littlerock, California City, Antelope Acres and down to Newhall. Free quotes by phone.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&display=swap">
+<style>
+/* Layout: flight-line dark — full-bleed photo wipes framed by olive panels, gold used only for action and the slider seam */
+:root{
+  --ink:#0c0d09; --panel:#16180f; --olive:#2f3419; --olive-hi:#4a5226;
+  --line:#2c3020; --sand:#ece5d0; --mute:#a9a68f;
+  --gold:#d8a93f; --gold-hi:#f2cf6e; --gold-ink:#1a1405;
+  --lime:#8fd13c;
+  --f-display:"Chakra Petch","Arial Narrow",system-ui,sans-serif;
+  --f-body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-label:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
+  --wrap:1180px; --gut:clamp(16px,4vw,40px);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--ink);color:var(--sand);font:400 17px/1.6 var(--f-body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:var(--gut)}
+h1,h2,h3{font-family:var(--f-display);font-weight:700;line-height:1.02;letter-spacing:-.01em;text-wrap:balance;margin:0}
+.label{font:600 13px/1 var(--f-label);letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.lede{color:var(--mute);max-width:58ch;margin:0}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 22px;border-radius:3px;font:700 15px/1 var(--f-label);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .15s,background .15s,border-color .15s}
+.btn-gold{background:var(--gold);color:var(--gold-ink);clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px)}
+.btn-gold:hover{background:var(--gold-hi);transform:translateY(-1px)}
+.btn-ghost{border-color:var(--olive-hi);color:var(--sand)}
+.btn-ghost:hover{border-color:var(--gold)}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* top bar */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--ink) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;gap:24px;padding-block:12px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto}
+.brand img{height:26px;width:auto}
+.brand span{font:700 15px/1.1 var(--f-label);letter-spacing:.14em;text-transform:uppercase}
+.nav{display:flex;gap:22px}
+.nav a{font:600 14px/1 var(--f-label);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--mute)}
+.nav a:hover{color:var(--sand)}
+.bar .btn{padding:11px 16px;font-size:14px}
+@media (max-width:860px){.nav{display:none}}
+@media (max-width:520px){.brand span{display:none}}
+
+/* hero */
+.hero{padding-block:clamp(36px,6vw,72px) clamp(40px,6vw,80px);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 70% at 85% 10%,color-mix(in srgb,var(--gold) 14%,transparent),transparent 60%),radial-gradient(50% 60% at 0% 100%,color-mix(in srgb,var(--olive-hi) 45%,transparent),transparent 70%);pointer-events:none}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(28px,5vw,64px);align-items:center;position:relative}
+.hero h1{font-size:clamp(40px,6.2vw,76px)}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero .stack{display:grid;gap:24px;min-width:0}
+.hero .stack p{font-size:19px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin:4px 0 0;padding:0;list-style:none;font:600 14px/1.3 var(--f-label);letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+.facts li{display:flex;align-items:center;gap:8px}
+.facts li::before{content:"";width:7px;height:7px;background:var(--gold);transform:rotate(45deg)}
+.badge{position:absolute;right:-14px;bottom:-26px;width:clamp(96px,13vw,150px);filter:drop-shadow(0 10px 22px rgba(0,0,0,.6));pointer-events:none}
+@media (max-width:900px){.hero .wrap{grid-template-columns:1fr}.badge{right:8px;bottom:-20px;width:92px}}
+
+/* before / after wipe */
+.ba{position:relative;--pos:50%;border-radius:4px;overflow:hidden;background:var(--panel);aspect-ratio:4/3;max-width:100%;isolation:isolate;touch-action:pan-y;user-select:none}
+.ba.tall{aspect-ratio:3/4}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.ba .before{clip-path:inset(0 calc(100% - var(--pos)) 0 0)}
+.ba .seam{position:absolute;top:0;bottom:0;left:var(--pos);width:3px;margin-left:-1.5px;background:var(--gold);box-shadow:0 0 18px color-mix(in srgb,var(--gold) 70%,transparent);pointer-events:none;z-index:2}
+.ba .knob{position:absolute;top:50%;left:var(--pos);width:48px;height:48px;margin:-24px 0 0 -24px;background:var(--gold);color:var(--gold-ink);display:grid;place-items:center;clip-path:polygon(30% 0,70% 0,100% 30%,100% 70%,70% 100%,30% 100%,0 70%,0 30%);pointer-events:none;z-index:3}
+.ba .knob svg{width:24px;height:24px}
+.ba input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:ew-resize;z-index:4}
+.ba:has(input:focus-visible) .knob{outline:2px solid var(--sand);outline-offset:3px}
+.tag{position:absolute;top:14px;z-index:2;display:flex;flex-direction:column;gap:3px;padding:8px 11px;background:color-mix(in srgb,var(--ink) 78%,transparent);backdrop-filter:blur(4px);border-left:3px solid var(--mute);font:700 13px/1 var(--f-label);letter-spacing:.16em;text-transform:uppercase;pointer-events:none}
+.tag small{font-weight:500;letter-spacing:.08em;color:var(--mute);font-size:12px}
+.tag.b{left:14px}
+.tag.a{right:14px;border-left-color:var(--gold);text-align:right}
+.hint{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);z-index:2;font:600 12px/1 var(--f-label);letter-spacing:.16em;text-transform:uppercase;padding:7px 10px;background:color-mix(in srgb,var(--ink) 75%,transparent);color:var(--sand);pointer-events:none;transition:opacity .4s}
+.ba.touched .hint{opacity:0}
+
+/* materials strip */
+.strip{border-block:1px solid var(--line);background:var(--olive);overflow:hidden}
+.track{display:flex;gap:44px;width:max-content;padding-block:16px;animation:slide 38s linear infinite}
+.track span{font:700 clamp(18px,2.2vw,24px)/1 var(--f-display);text-transform:uppercase;white-space:nowrap;display:flex;align-items:center;gap:44px}
+.track span::after{content:"";width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+.track span.no{color:var(--mute)}
+@keyframes slide{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.track{animation:none;flex-wrap:wrap;width:auto;padding-inline:var(--gut)}}
+
+/* sections */
+section{scroll-margin-top:70px}
+.sec{padding-block:clamp(56px,8vw,104px)}
+.head{display:grid;gap:14px;margin-bottom:clamp(28px,4vw,44px)}
+.head h2{font-size:clamp(32px,4.4vw,52px)}
+
+/* work */
+.work{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:20px}
+.job{display:grid;gap:12px;min-width:0;margin:0}
+.job figcaption{display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap}
+.job figcaption b{font:700 19px/1.2 var(--f-display)}
+.job figcaption span{font:500 14px/1.3 var(--f-label);letter-spacing:.1em;text-transform:uppercase;color:var(--mute);font-variant-numeric:tabular-nums}
+.j1{grid-column:span 7}.j2{grid-column:span 5}.j2 .ba{height:100%;aspect-ratio:auto;min-height:320px}
+.j3{grid-column:span 7}.j4{grid-column:span 5}
+.j2{grid-row:span 1}
+@media (max-width:860px){.j1,.j2,.j3,.j4{grid-column:1/-1}.j2 .ba{aspect-ratio:4/3;height:auto;min-height:0}}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.step{background:var(--panel);padding:30px 26px 34px;display:grid;gap:12px;align-content:start}
+.step .n{font:700 46px/1 var(--f-display);color:var(--olive-hi)}
+.step h3{font-size:24px}
+.step p{margin:0;color:var(--mute)}
+.step .time{font:700 13px/1 var(--f-label);letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+@media (max-width:760px){.steps{grid-template-columns:1fr}}
+
+/* services */
+.svc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,60px);align-items:start}
+.svc-list{display:grid;gap:0;margin:0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.svc-list li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 18px;padding:20px 0;border-bottom:1px solid var(--line)}
+.svc-list i{grid-row:span 2;width:12px;height:12px;margin-top:8px;background:var(--gold);transform:rotate(45deg)}
+.svc-list b{font:700 21px/1.25 var(--f-display)}
+.svc-list span{color:var(--mute)}
+.svc-list li.no i{background:transparent;border:2px solid #b4553a}
+.trailer{position:relative;margin:0}
+.trailer img{width:100%;border-radius:4px;aspect-ratio:4/3;object-fit:cover}
+.trailer figcaption{margin-top:12px;font:500 14px/1.4 var(--f-label);letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+@media (max-width:860px){.svc{grid-template-columns:1fr}}
+
+/* area */
+.area{background:var(--panel);border-block:1px solid var(--line)}
+.area .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,60px);align-items:center}
+.towns{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;padding:0;list-style:none}
+.towns li{font:600 15px/1 var(--f-label);letter-spacing:.1em;text-transform:uppercase;padding:10px 13px;border:1px solid var(--olive-hi)}
+.towns li.hq{border-color:var(--gold);color:var(--gold-hi)}
+.map{width:100%;height:auto;max-width:100%}
+.map text{font-family:var(--f-label);font-weight:600;letter-spacing:.1em;text-transform:uppercase}
+@media (max-width:860px){.area .wrap{grid-template-columns:1fr}}
+
+/* quote */
+.quote .wrap{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(28px,5vw,60px);align-items:start}
+.quote .stack{display:grid;gap:22px;min-width:0;position:sticky;top:96px}
+.phone{display:grid;gap:6px;padding:22px;border:1px solid var(--olive-hi);background:var(--panel)}
+.phone a{font:700 clamp(28px,3.4vw,38px)/1 var(--f-display);text-decoration:none;color:var(--gold-hi);font-variant-numeric:tabular-nums;user-select:all}
+.phone small{color:var(--mute)}
+.bot{border:1px solid var(--olive-hi);background:#0a0a0a;border-radius:4px;overflow:hidden;min-width:0}
+.bot-head{display:flex;align-items:center;gap:10px;padding:12px 16px;border-bottom:1px solid var(--line);background:var(--panel);font:600 13px/1 var(--f-label);letter-spacing:.14em;text-transform:uppercase}
+.bot-head .dot{width:8px;height:8px;border-radius:50%;background:var(--lime);box-shadow:0 0 10px var(--lime)}
+.bot-head a{margin-left:auto;color:var(--mute);text-decoration:none}
+.bot-head a:hover{color:var(--gold-hi)}
+.bot iframe{display:block;width:100%;height:720px;border:0;background:#0a0a0a}
+.bot-fallback{padding:clamp(28px,5vw,48px);display:grid;gap:18px;justify-items:start}
+.bot-fallback h3{font-size:26px}
+.bot-fallback ol{margin:0;padding-left:20px;color:var(--mute);display:grid;gap:6px}
+@media (max-width:860px){.quote .wrap{grid-template-columns:1fr}.quote .stack{position:static}.bot iframe{height:680px}}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding-block:44px 110px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:28px;align-items:center;justify-content:space-between}
+footer .fbrand{display:flex;align-items:center;gap:16px}
+footer .fbrand img{width:84px}
+footer p{margin:0;color:var(--mute);font-size:15px}
+.social{display:flex;gap:10px}
+.social a{width:44px;height:44px;display:grid;place-items:center;border:1px solid var(--olive-hi);border-radius:3px;color:var(--sand)}
+.social a:hover{border-color:var(--gold);color:var(--gold-hi)}
+.social svg{width:20px;height:20px}
+
+/* mobile action bar */
+.mbar{display:none}
+@media (max-width:700px){
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:color-mix(in srgb,var(--ink) 92%,transparent);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+  .mbar .btn{justify-content:center;padding:14px 10px}
+  .bar .btn{display:none}
+}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Golden Strada Trailers","description":"Junk removal, cleanouts and heavy hauling in the Antelope Valley","telephone":"+1-661-802-1248","image":"img/og.jpg","address":{"@type":"PostalAddress","addressLocality":"Lancaster","addressRegion":"CA","addressCountry":"US"},"areaServed":["Lancaster","Palmdale","Quartz Hill","Littlerock","California City","Antelope Acres","Rosamond","Acton","Santa Clarita","Newhall"],"sameAs":["https://www.instagram.com/goldenstradatrailers/","https://www.facebook.com/profile.php?id=61590334937079"]}</script>
+</head>
+<body>
+
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Golden Strada Trailers home"><img src="img/logo-gst.webp" alt="" width="120" height="26"><span>Golden Strada Trailers</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#work">Before &amp; After</a><a href="#services">What we haul</a><a href="#area">Service area</a><a href="#quote">Free quote</a>
+    </nav>
+    <a class="btn btn-gold" href="#quote">Get a quote</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="stack">
+        <span class="label">Junk removal · Antelope Valley</span>
+        <h1>Your garage has been staring at you for <em>two years.</em></h1>
+        <p class="lede">Eight AM, photo. Ten AM, gone. Golden Strada hauls junk, yard waste, concrete, dirt and rock from Lancaster to Newhall, and the price comes on a quick call before we roll.</p>
+        <div class="ctas">
+          <a class="btn btn-gold" href="#quote">Get my free quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-ghost" href="tel:+16618021248"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>(661) 802-1248</a>
+        </div>
+        <ul class="facts"><li>Family run</li><li>Free estimates</li><li>Heavy loads welcome</li></ul>
+      </div>
+      <div style="position:relative;min-width:0">
+        <div class="ba" data-ba data-intro>
+          <img class="after" src="img/yard1-after.webp" alt="Front yard after: weeds and dead grass cleared, fresh decorative rock spread to the sidewalk" width="1400" height="1050" fetchpriority="high">
+          <img class="before" src="img/yard1-before.webp" alt="Front yard before: dead grass, dry weeds and bare dirt" width="1400" height="1050">
+          <span class="tag b">Before</span>
+          <span class="tag a">After</span>
+          <span class="seam"></span>
+          <span class="knob"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></span>
+          <span class="hint">Drag to compare</span>
+          <input type="range" min="0" max="100" value="50" step="0.5" aria-label="Before and after comparison, front yard" id="ba-hero">
+        </div>
+        <img class="badge" src="img/logo-badge.webp" alt="" width="300" height="200">
+      </div>
+    </div>
+  </section>
+
+  <div class="strip" aria-label="What we take">
+    <div class="track" aria-hidden="true">
+      <span>Furniture</span><span>Appliances</span><span>Yard waste</span><span>Construction debris</span><span>Concrete</span><span>Dirt &amp; rock</span><span>Garage cleanouts</span><span>Estate cleanouts</span><span class="no">No hazmat</span>
+      <span>Furniture</span><span>Appliances</span><span>Yard waste</span><span>Construction debris</span><span>Concrete</span><span>Dirt &amp; rock</span><span>Garage cleanouts</span><span>Estate cleanouts</span><span class="no">No hazmat</span>
+    </div>
+  </div>
+
+  <section class="sec" id="work">
+    <div class="wrap">
+      <div class="head">
+        <span class="label">Before &amp; After</span>
+        <h2>Real jobs. Drag the seam.</h2>
+        <p class="lede">Every photo here is from a Golden Strada job, shot when we showed up and when we finished.</p>
+      </div>
+      <div class="work">
+        <figure class="job j1">
+          <div class="ba" data-ba>
+            <img class="after" src="img/living-after.webp" alt="Living room after: floor cleared down to the carpet, fireplace visible" width="1400" height="1050" loading="lazy">
+            <img class="before" src="img/living-before.webp" alt="Living room before: boxes, furniture and clutter covering the floor" width="1400" height="1050" loading="lazy">
+            <span class="tag b">Before</span><span class="tag a">After</span>
+            <span class="seam"></span><span class="knob"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></span>
+            <input type="range" min="0" max="100" value="50" step="0.5" aria-label="Before and after comparison, living room cleanout" id="ba-living">
+          </div>
+          <figcaption><b>Whole-house cleanout</b><span>Living room</span></figcaption>
+        </figure>
+        <figure class="job j2">
+          <div class="ba tall" data-ba>
+            <img class="after" src="img/closet-after.webp" alt="Walk-in cedar closet after: empty shelves and bare floor" width="1050" height="1400" loading="lazy">
+            <img class="before" src="img/closet-before.webp" alt="Walk-in cedar closet before: packed with clothes, boxes and bins" width="1050" height="1400" loading="lazy">
+            <span class="tag b">Before</span><span class="tag a">After</span>
+            <span class="seam"></span><span class="knob"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></span>
+            <input type="range" min="0" max="100" value="50" step="0.5" aria-label="Before and after comparison, walk-in closet" id="ba-closet">
+          </div>
+          <figcaption><b>Walk-in closet</b><span>Same house</span></figcaption>
+        </figure>
+        <figure class="job j3">
+          <div class="ba" data-ba>
+            <img class="after" src="img/yard2-after.webp" alt="Front yard after, street view: rock spread from driveway to neighbor's lawn" width="1400" height="1050" loading="lazy">
+            <img class="before" src="img/yard2-before.webp" alt="Front yard before, street view: overgrown weeds and dead brush" width="1400" height="1050" loading="lazy">
+            <span class="tag b">Before</span><span class="tag a">After</span>
+            <span class="seam"></span><span class="knob"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></span>
+            <input type="range" min="0" max="100" value="50" step="0.5" aria-label="Before and after comparison, front yard street view" id="ba-yard2">
+          </div>
+          <figcaption><b>Weeds out, rock in</b><span>Front yard, street view</span></figcaption>
+        </figure>
+        <div class="job j4" style="align-content:center">
+          <div class="steps" style="grid-template-columns:1fr">
+            <div class="step">
+              <span class="time">The yard job</span>
+              <h3>We haul it out and we haul it in.</h3>
+              <p>Dead turf and weeds leave in the trailer. Fresh rock comes back in the same trailer and gets spread to the edges. One crew, one call.</p>
+              <a class="btn btn-ghost" href="#quote" style="justify-self:start">Quote a yard</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <span class="label">How it works</span>
+        <h2>Three moves. No surprises.</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="n">1</span><span class="time">Takes a minute</span><h3>Tell us what's there</h3><p>Answer four quick questions in the quote form below: where you are, what kind of junk, how much, and how soon.</p></div>
+        <div class="step"><span class="n">2</span><span class="time">Free</span><h3>Get the price on the phone</h3><p>Robert calls you back with a straight number for the load. No price games online, and no charge for the estimate.</p></div>
+        <div class="step"><span class="n">3</span><span class="time">8 AM photo · 10 AM gone</span><h3>We load it and roll</h3><p>We back the trailer up, do all the lifting, and clean up behind us. Concrete, dirt and rock included.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="services" style="padding-top:0">
+    <div class="wrap svc">
+      <div>
+        <div class="head">
+          <span class="label">What we haul</span>
+          <h2>If you can't lift it, we can.</h2>
+          <p class="lede">Most haulers stop at couches. We take the heavy stuff too.</p>
+        </div>
+        <ul class="svc-list">
+          <li><i></i><b>Household junk</b><span>Furniture, mattresses, appliances, boxes, the pile in the garage.</span></li>
+          <li><i></i><b>Full cleanouts</b><span>Garages, sheds, storage units, estates and move-outs, down to the bare floor.</span></li>
+          <li><i></i><b>Yard waste &amp; debris</b><span>Weeds, dead turf, branches, brush and green waste.</span></li>
+          <li><i></i><b>Concrete, dirt &amp; rock</b><span>Busted slabs, block, soil and gravel. The loads nobody else wants.</span></li>
+          <li><i></i><b>Construction debris</b><span>Drywall, lumber, tile and remodel scraps.</span></li>
+          <li><i></i><b>Sand, rock &amp; trailer hauls</b><span>We'll bring material in, not just take it away.</span></li>
+          <li class="no"><i></i><b>Hazardous waste</b><span>The one thing we don't take: paint, chemicals, fuel and anything toxic.</span></li>
+        </ul>
+      </div>
+      <figure class="trailer">
+        <img src="img/trailer-34.webp" alt="Golden Strada's lime green high-side dump trailer with tarp roller" width="1360" height="1020" loading="lazy">
+        <figcaption>The rig: high-side tandem-axle dump trailer, tarped for the drive to the dump.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="sec area" id="area">
+    <div class="wrap">
+      <div>
+        <div class="head" style="margin-bottom:0">
+          <span class="label">Service area</span>
+          <h2>The whole Antelope Valley, plus the drop to Newhall.</h2>
+          <p class="lede">Based in Lancaster. We run north to California City, west to Antelope Acres, east past Littlerock and south through the pass to Newhall.</p>
+        </div>
+        <ul class="towns">
+          <li class="hq">Lancaster</li><li>Palmdale</li><li>Quartz Hill</li><li>Littlerock</li><li>California City</li><li>Antelope Acres</li><li>Rosamond</li><li>Acton</li><li>Santa Clarita</li><li>Newhall</li>
+        </ul>
+      </div>
+      <svg class="map" viewBox="0 0 560 520" role="img" aria-label="Map of the Golden Strada service area, from California City in the north to Newhall in the south">
+        <defs>
+          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#2c3020" stroke-width="1"/></pattern>
+        </defs>
+        <rect width="560" height="520" fill="url(#grid)"/>
+        <path d="M352 40 L470 70 L486 300 L420 360 L330 440 L118 482 L72 420 L120 300 L170 250 L250 170 Z" fill="#d8a93f" fill-opacity=".09" stroke="#d8a93f" stroke-width="2" stroke-dasharray="7 6"/>
+        <path d="M60 330 C150 300 240 330 330 360 S470 330 520 300" fill="none" stroke="#4a5226" stroke-width="10" stroke-linecap="round" opacity=".55"/>
+        <text x="40" y="356" fill="#a9a68f" font-size="12">San Gabriel Mtns</text>
+        <path d="M290 110 L300 470" stroke="#4a5226" stroke-width="2"/>
+        <text x="306" y="160" fill="#a9a68f" font-size="12">SR-14</text>
+        <g fill="#ece5d0" font-size="15">
+          <circle cx="390" cy="66" r="6" fill="#ece5d0"/><text x="404" y="71">California City</text>
+          <circle cx="295" cy="190" r="5" fill="#ece5d0"/><text x="309" y="195">Rosamond</text>
+          <circle cx="155" cy="250" r="6" fill="#ece5d0"/><text x="56" y="232">Antelope Acres</text>
+          <circle cx="232" cy="272" r="6" fill="#ece5d0"/><text x="152" y="296">Quartz Hill</text>
+          <circle cx="285" cy="272" r="11" fill="#d8a93f"/><circle cx="285" cy="272" r="20" fill="none" stroke="#d8a93f" stroke-width="1.5" opacity=".6"/><text x="312" y="268" fill="#f2cf6e" font-size="18">Lancaster</text><text x="312" y="286" fill="#a9a68f" font-size="12">Home base</text>
+          <circle cx="300" cy="328" r="6" fill="#ece5d0"/><text x="314" y="333">Palmdale</text>
+          <circle cx="410" cy="342" r="6" fill="#ece5d0"/><text x="380" y="368">Littlerock</text>
+          <circle cx="250" cy="392" r="5" fill="#ece5d0"/><text x="168" y="397">Acton</text>
+          <circle cx="150" cy="458" r="6" fill="#ece5d0"/><text x="166" y="463">Newhall</text>
+        </g>
+        <g transform="translate(510 470)"><path d="M0 -26 L7 -6 L0 -10 L-7 -6 Z" fill="#d8a93f"/><text y="10" fill="#a9a68f" font-size="12" text-anchor="middle">N</text></g>
+      </svg>
+    </div>
+  </section>
+
+  <section class="sec quote" id="quote">
+    <div class="wrap">
+      <div class="stack">
+        <div class="head" style="margin-bottom:0">
+          <span class="label">Free quote</span>
+          <h2>Tell us what's in the way.</h2>
+          <p class="lede">Four questions, under a minute. Robert calls you back with the price. Rather talk now? Call or text a photo.</p>
+        </div>
+        <div class="phone">
+          <span class="label">Call or text</span>
+          <a href="tel:+16618021248">(661) 802-1248</a>
+          <small>Texting a photo of the pile gets you the fastest number.</small>
+        </div>
+      </div>
+      <div class="bot" id="bot">
+        <div class="bot-head"><span class="dot"></span>Golden Strada quote bot<a href="https://golden-strada-lead-bot.vercel.app" target="_blank" rel="noopener">Open full screen ↗</a></div>
+        <div class="bot-fallback" id="bot-fallback">
+          <h3>Start your quote</h3>
+          <ol><li>Your name and city</li><li>What kind of junk, and how much</li><li>How soon, and the best number to reach you</li></ol>
+          <a class="btn btn-gold" href="https://golden-strada-lead-bot.vercel.app" target="_blank" rel="noopener">Open the quote bot</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fbrand">
+      <img src="img/logo-badge.webp" alt="Golden Strada Trailers" width="300" height="200" loading="lazy">
+      <div><p><b style="color:var(--sand)">Golden Strada Trailers</b></p><p>Junk removal &amp; hauling · Lancaster, CA · (661) 802-1248</p></div>
+    </div>
+    <div class="social">
+      <a href="https://www.instagram.com/goldenstradatrailers/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+      <a href="https://www.facebook.com/profile.php?id=61590334937079" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.6V11H7v4h2.5v9h4v-9H17l.5-4h-4V8.8c0-.5.3-.8.5-.8z"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn btn-ghost" href="tel:+16618021248">Call</a>
+  <a class="btn btn-gold" href="#quote">Free quote</a>
+</div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('[data-ba]').forEach(function(el){
+    var input = el.querySelector('input');
+    function set(v){ el.style.setProperty('--pos', v + '%'); }
+    input.addEventListener('input', function(){ el.classList.add('touched'); set(input.value); });
+    set(input.value);
+    if (el.hasAttribute('data-intro') && !reduce){
+      // opening wipe: reveal the "after", then settle in the middle
+      var keys = [[0,92],[900,8],[1700,50]], t0 = null;
+      function ease(t){ return t<.5 ? 4*t*t*t : 1-Math.pow(-2*t+2,3)/2; }
+      function frame(ts){
+        if (el.classList.contains('touched')) return;
+        if (t0 === null) t0 = ts;
+        var t = ts - t0, v = keys[keys.length-1][1];
+        for (var i=1;i<keys.length;i++){
+          if (t <= keys[i][0]){ var a=keys[i-1], b=keys[i]; v = a[1] + (b[1]-a[1]) * ease((t-a[0])/(b[0]-a[0])); break; }
+        }
+        set(v); input.value = v;
+        if (t < keys[keys.length-1][0]) requestAnimationFrame(frame);
+      }
+      setTimeout(function(){ requestAnimationFrame(frame); }, 500);
+    }
+  });
+
+  // Quote bot: embed the live Vercel bot on the real site. Preview hosts that block
+  // third-party frames keep the designed fallback with the link-out button.
+  var host = location.hostname;
+  var canEmbed = host && !/claude|anthropic|localhost$|^127\./.test(host) && location.protocol !== 'file:';
+  if (canEmbed){
+    var f = document.createElement('iframe');
+    f.src = 'https://golden-strada-lead-bot.vercel.app';
+    f.title = 'Golden Strada free quote';
+    f.loading = 'lazy';
+    document.getElementById('bot-fallback').hidden = true;
+    document.getElementById('bot').appendChild(f);
+  }
+})();
+</script>
+
+</body>
+</html>
